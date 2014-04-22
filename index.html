@@ -7,8 +7,8 @@
 	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <title>Portfolio by flpms</title>
     <style>
-    	#forkongithub a{background:#000;color:#fff;font: 1.4rem/2.0rem 'arial', sans-serif;padding:5px 40px;position:relative;text-align:center;text-decoration:none;transition:0.5s;}
-    	#forkongithub a:hover{background:#009;color:#fff;}
+    	#forkongithub a{background:rgba(200,200,200,0.5);color:#000;font: 1.4rem/2.0rem 'arial', sans-serif;padding:5px 40px;position:relative;text-align:center;text-decoration:none;transition:0.5s;}
+    	#forkongithub a:hover{background:rgba(255,255,255,0.5);color:#fff;}
     	#forkongithub a::before,#forkongithub a::after{background:#fff;content:"";display:block;height:1px;left:0;position:absolute;top:1px;width:100%;}
     	#forkongithub a::after{bottom:1px;top:auto;}
     	@media screen and (min-width:800px){
@@ -36,8 +36,27 @@
 			filter: blur(15px);
 		}
 		
-		.vcard { background: rgba(255,255,255,0.3); border-bottom: 1px solid #FFF; border-right: 1px solid #FFF; border-radius: 5px; margin-top:50px; padding: 10px 5px ; width: 220px; }
+		.vcard { 
+			background: rgba(255,255,255,0.3);
+			border-bottom: 1px solid #FFF;
+			border-right: 1px solid #FFF;
+			border-radius: 5px;
+			box-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+			margin-top:50px;
+			padding: 20px 10px;
+			width: 220px;
+		}
 		.vcard .photo{ width: 140px; margin-left: 30px }
+		.fn{margin: 5px;}
+		
+		#resume{
+			background:#FFF;
+			box-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+			border-radius: 3px;
+			margin-top:50px;
+			padding: 20px 30px;
+			width: 660px;
+		}
     </style>
   </head>
 
@@ -48,12 +67,12 @@
     	<div class="col-lg-4">
 		    <div class="vcard ">
 		     	<div class="photo"><img src="images/perfil.png" class="img-responsive img-circle" /></div>
-				<p class="fn"><a class="url" href="#">Filipe Melo da Silva</a><p>
-				<p class="adr">
+				<h1 class="fn text-center"><small>Filipe Melo Silva</small></h1>
+				<p class="adr text-justify">
 					<span class="street-address">Rua Jales, 80</span><br />
 					<span>Jd. Sto. Ant. de Pádua</span><br>
-					<span class="city">Santo André</span><span>São Paulo</span><br>
-					<span class="postal-code">09111-620</span><br>
+					<span class="city">Santo André</span>-<span class="state">SP</span><br>
+					<span class="postal-code">CEP: 09111-620</span><br>
 					<span class="country-name">Brasil</span>
 				</p>
 				<p class="tel">
@@ -62,11 +81,60 @@
 				</p>
 			</div>
 		</div>
-	    <article id="resume">
-	    	<div id="scholar">
-		    	
-	    	</div>
-	    </article>
+	    <section id="resume" class="col-lg-8">
+	    	<article id="scholar">
+		    	<h3>FORMAÇÃO</h3>
+				<p>Ensino médio completo – E. E. Washington Vita, Mauá, concluído em 2006;</p>
+				<p>Curso técnico em informática ênfase em redes de comunicação – Escola SENAI Professor Vicente Amato, Jandira, concluído em 2008;</p>
+				<p>Ensino superior tecnológico em desenvolvimento para web – UNISUL, duração 2 anos e 5 meses, conclusão em 2014 (trancada);</p>
+	    	</article>
+	    	<article>
+	    		<h3>EXPERIÊNCIA PROFISSIONAL</h3>
+	    		<p>Novembro, 2013 até o março de 2014</p>
+	    		<div class="panel panel-default">
+	    			<div class="panel-heading">
+	    				<h4 class="panel-title">
+	    					<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Meta Ensino Avançado, Dourados (MS)</a>
+	    				</h4>
+	    			</div>
+	    			<div id="collapseOne" class="panel-collapse collapse in">
+      					<div class="panel-body">
+      						<p>Cargo: Professor</p>
+							<p>Principais atividades: Lecionar matérias de informática básica, web design e web developer e monitoria de aulas interativas.</p>
+						</div>
+					</div>
+				</div>
+				<p>Maio, 2012 até o presente</p>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Profissional freelancer, Dourados (MS)</a>
+						</h4>
+					</div>
+					<div id="collapseOne" class="panel-collapse collapse in">
+      					<div class="panel-body">
+							<p>Cargo: Front­-End developer e designer</p>
+							<p>Principais atividades: Desenvolvimento de sites, layouts para blog e design de logotipos. Tanto com HTML5 e CSS3.</p>
+						</div>
+					</div>
+				</div>
+				<p>Maio 2010 até Maio 2012</p>
+				<p>CSC(Computer Sciences Corporation), São Paulo (SP)</p>
+				<p>Cargo: Application Developer Junior Professional, fábrica de softwares e alocações em diversos clientes.</p>
+				<p>Principais atividades e clientes:</p>
+				<p>Banco Votorantim</p>
+				<p>Criação de telas e fluxos em sistemas ALBPM durante o período de Maio de 2010 até Janeiro de 2011 alocado no cliente. No período de Fevereiro a Setembro de 2011, atuei desenvolvendo o front­-end de sistemas web baseado em Java na fabrica de software para o mesmo cliente.</p>
+				<p>Oi</p>
+				<p>Criação de scripts para testes automatizados e execução dos mesmo, durante o período de Novembro de 2011 até Fevereiro de 2012.</p>
+				<p>Porto Seguro</p>
+				<p>Criação de Mock­ups para proposta de sistemas mobile baseado em webApp, no período de Fevereiro a Março de 2012</p>
+				<p>BBC (British Broadcasting Company)</p>
+				<p>Criação de fluxos SOA para novo sistema de TVL license da estatal britânica Março de 2012 a Maio de 2012</p>
+				<p>Junho 2009 até Dezembro 2009 –Agência Nova Ideia, Ponta Porã (MS)</p>
+				<p>Cargo: Desenvolvedor Web</p>
+				<p>Principais atividades: Desenvolvimento do front­-end utilizando xHTML e CSS e Javascript, alguns sites e hot­sites desenvolvidos em Flash e ActionScript 2 e 3. Desenvolvimento back-end utilizando PHP e framework Joomla.</p>
+	    	</article>
+	    </section>
     </div>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
