@@ -8,7 +8,7 @@
 }
 
 .background:before {
-	background: url('images/bg.jpg') no-repeat;
+	background: url('../images/bg.jpg') no-repeat;
 	background-size: cover;
 	content: "";
 	position: fixed;
