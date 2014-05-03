@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
+		<meta charset="utf-8" />
 		<title>Portfolio by flpms</title>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" >
-		<link href="stylesheets/index.css" rel="stylesheet" >
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="stylesheets/index.css" rel="stylesheet" />
+		
 	</head>
 
 	<body>
 		<div class="background"></div>
-		<span id="forkongithub"><a href="https://github.com/flpms/portfolio">Fork me on GitHub</a></span>
+		<span id="forkongithub"><a href="https://github.com/flpms/portfolio">Fork me</a></span>
 		<div class="container">
-			<div class="col-md-3 col-lg-3 pull-left">
+			<div class="col-sm-12 col-md-4 col-lg-3">
 				<div class="vcard">
-					<div class="photo"><img src="images/perfil.png" class="img-responsive img-circle" /></div>
-					<h1 class="fn text-center"><small>Filipe Melo Silva</small></h1>
-					<p class="text-center"><a href="mailto:filipemelodasilva@gmail.com"><small>filipemelodasilva@gmail.com</small></a></p>
-					<p class="adr text-justify">
-						<span class="street-address">Rua Jales, 80</span><br />
-						<span>Jd. Sto. Ant. de Pádua</span><br>
-						<span class="city">Santo André</span>-<span class="state">SP</span><br>
-						<span class="postal-code">CEP: 09111-620</span><br>
-						<span class="country-name">Brasil</span>
-					</p>
-					<p class="tel">
-						<span>+55 (11) 964 316 820</span><br />
-						<span>+55 (67) 8211 4160</span>
-					</p>
+					<div class="col-sm-4 col-lg-12"><img src="images/perfil.png" class="img-responsive img-circle" /></div>
+					<div class="col-sm-8 col-lg-12">
+						<h1 class="fn text-center col-sm-12"><small>Filipe M. Silva</small></h1>
+						<p class="text-center col-sm-12"><a href="mailto:filipemelodasilva@gmail.com"><small>filipemelodasilva@gmail.com</small></a></p>
+						<p class="adr col-sm-6 col-lg-12">
+							<span class="street-address">Rua Jales, 80</span><br />
+							<span>Jd. Sto. Ant. de Pádua</span><br>
+							<span class="city">Santo André</span>-<span class="state">SP</span><br>
+							<span class="postal-code">CEP: 09111-620</span><br>
+							<span class="country-name">Brasil</span>
+						</p>
+						<p class="tel col-sm-6 col-lg-12">
+							<span>+55 (11) 964 316 820</span><br />
+							<span>+55 (67) 8211 4160</span>
+						</p>
+					</div>
 				</div>
 			</div>
-			<div class="col-md-2 col-lg-2 pull-right">
+			<div class="col-md-1 col-lg-2 hidden-sm pull-right">
 				<nav class="menu" role="navigation" id="summary">
 					<ul class="nav nav-pills nav-stacked">
 						<li><a href="#academic" >Escolaridade</a></li>
@@ -44,7 +46,7 @@
 					</ul>
 				</nav>
 			</div>
-			<section id="resume" class="col-md-7 col-lg-7">
+			<div id="resume" class="col-md-7 col-lg-6 col-sm-12">
 				<article id="academic">
 					<h3>FORMAÇÃO</h3>
 					<p>Ensino médio completo – E. E. Washington Vita, Mauá, concluído em 2006;</p>
@@ -121,9 +123,9 @@
 				<article id="professionalSkills">
 					<h3>QUALIFICAÇÕES PROFISSIONAIS</h3>
 					<div class="col-lg-12 col-md-12">
-						<div class="col-md-offset-3 col-md-3 col-lg-offset-3 col-lg-3 text-center">Básico</div>
-						<div class="col-md-3 col-lg-3 text-center">Intermediário</div>
-						<div class="col-md-3 col-lg-3 text-right">Avançado</div>
+						<div class="col-sm-4 col-md-offset-3 col-md-3 col-lg-offset-3 col-lg-3">Básico</div>
+						<div class="col-sm-4 col-md-3 col-lg-3 text-center">Intermediário</div>
+						<div class="col-sm-4 col-md-3 col-lg-3 text-right">Avançado</div>
 					</div>
 					<h4>Linguagens de programação e marcação</h4>
 					<p class="col-md-4 col-lg-4">xHTML</p>
@@ -348,27 +350,29 @@
 				</article>
 				<article id="idiom">
 					<h3>Idiomas</h3>
-					<div class="col-md-4 col-lg-4 text-left">Básico</div>
-					<div class="col-md-4 col-lg-4 text-center">Intermediário</div>
-					<div class="col-md-4 col-lg-4 text-right">Fluente</div>
-					<div class="col-md-12 col-lg-12">
-						<div class="progress">
-							<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-								<span>Espanhol</span>
+					<div class="row">
+						<div class="col-sm-4 col-md-4 col-lg-4 text-left">Básico</div>
+						<div class="col-sm-4 col-md-4 col-lg-4 text-center">Intermediário</div>
+						<div class="col-sm-4 col-md-4 col-lg-4 text-right">Fluente</div>
+						<div class="col-sm-12 col-md-12 col-lg-12">
+							<div class="progress">
+								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+									<span>Espanhol</span>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-md-12 col-lg-12">
-						<div class="progress">
-							<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-								<span>LIBRAS</span>
+						<div class="col-sm-12col-md-12 col-lg-12">
+							<div class="progress">
+								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+									<span>LIBRAS</span>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-md-12 col-lg-12">
-						<div class="progress">
-							<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-								<span>Inlgês</span>
+						<div class="col-sm-12 col-md-12 col-lg-12">
+							<div class="progress">
+								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+									<span>Inlgês</span>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -376,59 +380,59 @@
 				<article id="work">
 					<h3>Exemplos de trabalhos</h3>
 					<div class="row workitem">
-						<div class="col-md-6 col-lg-6">
+						<div class="col-sm-6 col-md-6 col-lg-6">
 							<img src="images/socialcommerce.png" alt="Layout SocialCommerce" class="img-thumbnail" />
 						</div>
-						<div class="col-md-6 col-lg-6">
+						<div class="col-sm-6 col-md-6 col-lg-6">
 							<h4>SocialCommerce</h4>
 							<p><b>Design e programação do site</b><br />
 								Projeto criado em HTML5 e CSS3 nativo e Twitter Bootstrap.
 							</p>
-							<div class="col-md-8 col-lg-8">
+							<div class="col-sm-6 col-md-8 col-lg-8">
 								<a href="">Ver no Behance</a>
 							</div>
-							<div class="col-md-4 col-lg-4">
+							<div class="col-sm-6 col-md-4 col-lg-4">
 								<a href="socialcom.me">Visitar</a>
 							</div>
 						</div>
 					</div>
 					<div class="row workitem">
-						<div class="col-md-6 col-lg-6">
+						<div class="col-sm-6 col-md-6 col-lg-6">
 							<img src="images/radiologiacrol.png" alt="Layout site Radiologia Crol" class="img-thumbnail" />
 						</div>
-						<div class="col-md-6 col-lg-6">
+						<div class="col-sm-6 col-md-6 col-lg-6">
 							<h4>Radiologia Crol</h4>
 							<p><b>Desing e programação</b><br />
 								Tema Wordpress criado com Twitter Bootstrap.
 							</p>
-							<div class="col-md-8 col-lg-8">
+							<div class="col-sm-6 col-md-8 col-lg-8 ">
 								<a href="">Ver no Behance</a>
 							</div>
-							<div class="col-md-4 col-lg-4">
+							<div class="col-sm-6 col-md-4 col-lg-4">
 								<a href="radiologaicrol.com.br">Visitar</a>
 							</div>
 						</div>
 					</div>
 					<div class="row workitem">
-						<div class="col-md-6 col-lg-6">
+						<div class="col-sm-6 col-md-6 col-lg-6">
 							<img src="images/restore.png" alt="Layout Restore Móveis" class="img-thumbnail" />
 						</div>
-						<div class="col-md-6 col-lg-6">
+						<div class="col-sm-6 col-md-6 col-lg-6">
 							<h4>Restore Móveis</h4>
 							<p><b>Desing e programação</b><br />
 								Tema Wordpress criado com Twitter Bootstrap.
 							</p>
-							<div class="col-md-8 col-lg-8">
+							<div class="col-sm-6 col-md-8 col-lg-8 ">
 								<a href="">Ver no Behance</a>
 							</div>
-							<div class="col-md-4 col-lg-4">
+							<div class="col-sm-6 col-md-4 col-lg-4 ">
 								<a href="restoremoveis.com">Visitar</a>
 							</div>
 						</div>
 					</div>
 				</article>
 				<article id="othersLinks">
-					<h3>Outras formas de contato</h4>
+					<h3>Outras formas de contato</h3>
 					<div class="row">
 						<p class="col-md-6 col-lg-6 linkiten">LinkedIn</p>
 						<div class="col-md-6 col-lg-6 linkiten">
@@ -452,8 +456,9 @@
 						</div>
 				</article>
 				<div class="end"></div>
-			</section>
+			</div>
 		</div>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 	</body>
 </html>
